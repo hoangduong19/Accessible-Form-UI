@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <label for="name">Full Name</label>
+            <input id="name" placeholder="What should we call you" type="text" aria-required="true">
+            <label for="email">Email</label>
+            <input id="email" placeholder="Where could we contact you" type="email" 
+            aria-required="true" aria-describedby="email-error" aria-invalid="false">
+            <p id="email-error" class="error-message">Invalid email address</p>
+            <label for="password">Password</label>
+            <input id="password" placeholder="xxxxxxxxx" type="password"
+            aria-required="true" aria-describedby="password-error" aria-invalid="false">
+            <label for="confirm-password">Confirm Password</label>
+            <div>
+                <input id="confirm-password" placeholder="xxxxxxxxx" type="password" 
+                aria-required="true" aria-describedby="password-error" aria-invalid="false">
+                <button class="eye-btn">
+                    <img>
+                </button>
+            </div>
+            <button class="update-profile">
+
+            </button>
+            
+        </div>
+        <div class="progress">
+            <p class="circle-progress">
+                65%
+            </p>
+            <p>
+                Profile Completeness
+            </p>
+            <div class="checklist">
+                <p>Create Account</p>
+                <p>Update Roadmap Progress</p>
+                <p>Setup Public Profile</p>
+                <p>Complete your first project</p>
+                <p>Invite your friends</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
