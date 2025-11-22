@@ -16,18 +16,26 @@
             aria-required="true" aria-describedby="email-error" aria-invalid="false">
             <p id="email-error" class="error-message">Invalid email address</p>
             <label for="password">Password</label>
-            <input id="password" placeholder="xxxxxxxxx" type="password"
-            aria-required="true" aria-describedby="password-error" aria-invalid="false">
-            <label for="confirm-password">Confirm Password</label>
             <div>
-                <input id="confirm-password" placeholder="xxxxxxxxx" type="password" 
-                aria-required="true" aria-describedby="password-error" aria-invalid="false">
-                <button class="eye-btn">
-                    <img>
+                <input id="password" placeholder="xxxxxxxxx" type="password"
+            aria-required="true" aria-describedby="password-error" aria-invalid="false">
+                <button class="eye-btn1 "
+                aria-label="Show password" aria-pressed="false">
+                    <img src="eye.png" href="hide password"/>
                 </button>
             </div>
-            <button class="update-profile">
-
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-wrapper">
+                <input id="confirm-password" placeholder="xxxxxxxxx" type="password" 
+                aria-required="true" aria-describedby="password-error" aria-invalid="false">
+                <button class="eye-btn2" 
+                aria-label="Show password" aria-pressed="false">
+                    <img src="eye.png" href="hide password"/>
+                </button>
+            </div>
+            <button class="update-profile"
+            aria-label="update profile" aria-pressed="false">
+                <p>Update Profile</p>
             </button>
             
         </div>
@@ -35,13 +43,13 @@
             <p class="circle-progress">
                 65%
             </p>
-            <p>
+            <p style="text-align: center;">
                 Profile Completeness
             </p>
             <div class="checklist">
-                <p>Create Account</p>
-                <p>Update Roadmap Progress</p>
-                <p>Setup Public Profile</p>
+                <p style="text-decoration: line-through;">Create Account</p>
+                <p style="text-decoration: line-through;">Update Roadmap Progress</p>
+                <p style="text-decoration: line-through;">Setup Public Profile</p>
                 <p>Complete your first project</p>
                 <p>Invite your friends</p>
             </div>
